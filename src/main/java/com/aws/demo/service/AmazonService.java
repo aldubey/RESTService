@@ -21,6 +21,7 @@ public class AmazonService {
 		uidMap.put("9822135", "AWS Redshift");
 		uidMap.put("9822136", "AWS DynamoDB");
         uidMap.put("9822189", "cloud");
+        uidMap.put("39872189", "New cloud");
 	}
 
 	@GET
