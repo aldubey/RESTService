@@ -19,7 +19,6 @@ public class AmazonService {
 	static {
 		uidMap.put("9822134", "Amazon EC2");
 		uidMap.put("9822135", "AWS Redshift");
-		uidMap.put("9822136", "AWS DynamoDB");
 	}
 
 	@GET
