@@ -56,7 +56,9 @@ public class FutureTest {
 			}
 			return numList1;
 		} , executorService);
-		future1.thenAccept(list -> list.forEach(intPrinter));
+		future1.thenAccept(list -> {
+			return list.forEach(intPrinter);
+		});
 		future2.thenAccept(list -> list.forEach(intPrinter));
 		TimeUnit.SECONDS.sleep(2);
 		System.out.println("Elasped Time : " + (System.currentTimeMillis() - startTime) / 1000);
