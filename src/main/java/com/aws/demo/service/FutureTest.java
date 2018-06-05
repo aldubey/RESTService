@@ -14,9 +14,7 @@ import java.util.function.Consumer;
 public class FutureTest {
 
 	public static void main(String[] args) throws Exception {
-		Consumer<Integer> intPrinter = (i) -> {
-			System.out.println(i);
-		};
+		Consumer<Integer> intPrinter = (i) -> 	System.out.println(i);
 		ExecutorService executorService = Executors.newFixedThreadPool(2);
 		Callable<List<Integer>> task1 = () -> {
 			TimeUnit.SECONDS.sleep(2);
